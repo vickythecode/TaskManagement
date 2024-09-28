@@ -20,7 +20,7 @@ const Board = () => {
   }, []);
 
   const addTask = () => {
-    const newId = tasks.length;
+    const newId = tasks.length+1;
     
     localStorage.setItem(`task-${newId}`, newTaskName);
     localStorage.setItem(`content-${newId}`, newTaskContent);

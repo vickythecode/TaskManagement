@@ -35,7 +35,7 @@ const Board = () => {
   const cloneTask = () => {
     const taskToClone = tasks.find(task => task.id === selectedTaskToClone);
     if (taskToClone) {
-      const newId = tasks.length;
+      const newId = tasks.length + 1;
       
       localStorage.setItem(`task-${newId}`, taskToClone.name);
       localStorage.setItem(`content-${newId}`, taskToClone.content);
